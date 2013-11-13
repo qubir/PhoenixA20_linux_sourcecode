@@ -1,0 +1,1 @@
+cmd_drivers/media/video/videobuf-core.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/videobuf-core.ko drivers/media/video/videobuf-core.o drivers/media/video/videobuf-core.mod.o

@@ -1,0 +1,2 @@
+kernel/drivers/media/video/sun7i/sun7i_cedar.ko
+kernel/drivers/media/video/sun7i/cache-v7.ko

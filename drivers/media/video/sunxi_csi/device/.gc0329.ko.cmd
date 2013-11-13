@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sunxi_csi/device/gc0329.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/sunxi_csi/device/gc0329.ko drivers/media/video/sunxi_csi/device/gc0329.o drivers/media/video/sunxi_csi/device/gc0329.mod.o

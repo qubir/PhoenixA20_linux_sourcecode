@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sun7i_tvd/sun7i_tvd.o := arm-linux-gnueabi-ld -EL    -r -o drivers/media/video/sun7i_tvd/sun7i_tvd.o drivers/media/video/sun7i_tvd/drv_tvd.o drivers/media/video/sun7i_tvd/bsp_tvd.o 

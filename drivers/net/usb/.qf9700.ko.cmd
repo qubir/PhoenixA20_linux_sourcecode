@@ -1,0 +1,1 @@
+cmd_drivers/net/usb/qf9700.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/net/usb/qf9700.ko drivers/net/usb/qf9700.o drivers/net/usb/qf9700.mod.o

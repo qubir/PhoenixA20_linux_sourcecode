@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sunxi_csi/camera_detector/camera.o := arm-linux-gnueabi-ld -EL    -r -o drivers/media/video/sunxi_csi/camera_detector/camera.o drivers/media/video/sunxi_csi/camera_detector/camera_detector.o drivers/media/video/sunxi_csi/camera_detector/camera_list.o 

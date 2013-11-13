@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sun7i_tvd/sun7i_tvd.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/sun7i_tvd/sun7i_tvd.ko drivers/media/video/sun7i_tvd/sun7i_tvd.o drivers/media/video/sun7i_tvd/sun7i_tvd.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/net/usb/mcs7830.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/net/usb/mcs7830.ko drivers/net/usb/mcs7830.o drivers/net/usb/mcs7830.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sunxi_csi/csi0/sunxi_csi0.o := arm-linux-gnueabi-ld -EL    -r -o drivers/media/video/sunxi_csi/csi0/sunxi_csi0.o drivers/media/video/sunxi_csi/csi0/sunxi_csi_reg.o drivers/media/video/sunxi_csi/csi0/sunxi_drv_csi.o 

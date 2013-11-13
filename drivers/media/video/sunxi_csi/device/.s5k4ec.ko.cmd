@@ -1,0 +1,1 @@
+cmd_drivers/media/video/sunxi_csi/device/s5k4ec.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/sunxi_csi/device/s5k4ec.ko drivers/media/video/sunxi_csi/device/s5k4ec.o drivers/media/video/sunxi_csi/device/s5k4ec.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/media/video/videobuf-dma-contig.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/videobuf-dma-contig.ko drivers/media/video/videobuf-dma-contig.o drivers/media/video/videobuf-dma-contig.mod.o

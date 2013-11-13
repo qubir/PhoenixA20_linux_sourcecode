@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/bcm4330/bcm4330.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/net/wireless/bcm4330/bcm4330.ko drivers/net/wireless/bcm4330/bcm4330.o drivers/net/wireless/bcm4330/bcm4330.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/media/video/uvc/uvcvideo.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/media/video/uvc/uvcvideo.ko drivers/media/video/uvc/uvcvideo.o drivers/media/video/uvc/uvcvideo.mod.o

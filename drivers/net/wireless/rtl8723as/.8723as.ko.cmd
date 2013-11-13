@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rtl8723as/8723as.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/net/wireless/rtl8723as/8723as.ko drivers/net/wireless/rtl8723as/8723as.o drivers/net/wireless/rtl8723as/8723as.mod.o
