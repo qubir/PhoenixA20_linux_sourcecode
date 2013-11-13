@@ -1,0 +1,5 @@
+kernel/drivers/hwmon/mma865x.ko
+kernel/drivers/hwmon/mma8452.ko
+kernel/drivers/hwmon/mma7660.ko
+kernel/drivers/hwmon/afa750.ko
+kernel/drivers/hwmon/kxtik.ko

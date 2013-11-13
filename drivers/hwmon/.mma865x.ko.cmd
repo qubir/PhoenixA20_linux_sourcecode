@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/mma865x.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/hwmon/mma865x.ko drivers/hwmon/mma865x.o drivers/hwmon/mma865x.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/hid/hid-logitech-dj.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/hid/hid-logitech-dj.ko drivers/hid/hid-logitech-dj.o drivers/hid/hid-logitech-dj.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/mma7660.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/hwmon/mma7660.ko drivers/hwmon/mma7660.o drivers/hwmon/mma7660.mod.o

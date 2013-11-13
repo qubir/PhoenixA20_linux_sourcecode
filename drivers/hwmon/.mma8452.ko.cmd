@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/mma8452.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/hwmon/mma8452.ko drivers/hwmon/mma8452.o drivers/hwmon/mma8452.mod.o
