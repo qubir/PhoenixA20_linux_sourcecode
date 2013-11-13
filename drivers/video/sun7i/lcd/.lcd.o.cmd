@@ -1,0 +1,1 @@
+cmd_drivers/video/sun7i/lcd/lcd.o := arm-linux-gnueabi-ld -EL    -r -o drivers/video/sun7i/lcd/lcd.o drivers/video/sun7i/lcd/dev_lcd.o drivers/video/sun7i/lcd/lcd0_panel_cfg.o drivers/video/sun7i/lcd/lcd1_panel_cfg.o 

@@ -1,0 +1,1 @@
+cmd_drivers/video/sun7i/disp/disp.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/video/sun7i/disp/disp.ko drivers/video/sun7i/disp/disp.o drivers/video/sun7i/disp/disp.mod.o
