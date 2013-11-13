@@ -1,0 +1,1 @@
+cmd_drivers/usb/sun7i_usb/built-in.o :=  arm-linux-gnueabi-ld -EL    -r -o drivers/usb/sun7i_usb/built-in.o drivers/usb/sun7i_usb/sw_usbc.o drivers/usb/sun7i_usb/sw_usb_hcd0.o drivers/usb/sun7i_usb/sw_usb_udc.o 

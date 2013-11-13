@@ -1,0 +1,2 @@
+kernel/drivers/usb/sun7i_usb/sw_usbc.ko
+kernel/drivers/usb/sun7i_usb/sw_usb_hcd0.ko

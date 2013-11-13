@@ -1,0 +1,1 @@
+cmd_drivers/usb/sun7i_usb/sw_usb_udc.o := arm-linux-gnueabi-ld -EL    -r -o drivers/usb/sun7i_usb/sw_usb_udc.o drivers/usb/sun7i_usb/udc/sw_udc.o drivers/usb/sun7i_usb/udc/sw_udc_board.o drivers/usb/sun7i_usb/udc/sw_udc_debug.o drivers/usb/sun7i_usb/udc/sw_udc_dma.o 
