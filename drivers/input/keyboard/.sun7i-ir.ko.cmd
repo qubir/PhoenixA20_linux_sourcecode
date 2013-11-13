@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/sun7i-ir.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/keyboard/sun7i-ir.ko drivers/input/keyboard/sun7i-ir.o drivers/input/keyboard/sun7i-ir.mod.o

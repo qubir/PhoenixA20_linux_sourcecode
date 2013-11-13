@@ -1,0 +1,1 @@
+cmd_drivers/gpio/gpio-sunxi.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/gpio/gpio-sunxi.ko drivers/gpio/gpio-sunxi.o drivers/gpio/gpio-sunxi.mod.o

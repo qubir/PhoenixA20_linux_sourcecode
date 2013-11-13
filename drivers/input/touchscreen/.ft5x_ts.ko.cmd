@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/ft5x_ts.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/touchscreen/ft5x_ts.ko drivers/input/touchscreen/ft5x_ts.o drivers/input/touchscreen/ft5x_ts.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/gslX680.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/touchscreen/gslX680.ko drivers/input/touchscreen/gslX680.o drivers/input/touchscreen/gslX680.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/input/device.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/device.ko drivers/input/device.o drivers/input/device.mod.o

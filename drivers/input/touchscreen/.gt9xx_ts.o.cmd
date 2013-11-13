@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/gt9xx_ts.o := arm-linux-gnueabi-ld -EL    -r -o drivers/input/touchscreen/gt9xx_ts.o drivers/input/touchscreen/goodix_tool.o drivers/input/touchscreen/gt9xx_update.o drivers/input/touchscreen/gt9xx.o 

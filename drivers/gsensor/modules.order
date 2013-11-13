@@ -1,0 +1,4 @@
+kernel/drivers/gsensor/bma250.ko
+kernel/drivers/gsensor/lis3dh_acc.ko
+kernel/drivers/gsensor/lis3de_acc.ko
+kernel/drivers/gsensor/dmard10.ko

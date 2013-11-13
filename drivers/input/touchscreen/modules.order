@@ -1,0 +1,7 @@
+kernel/drivers/input/touchscreen/ft5x_ts.ko
+kernel/drivers/input/touchscreen/zet622x.ko
+kernel/drivers/input/touchscreen/gslX680.ko
+kernel/drivers/input/touchscreen/gt82x.ko
+kernel/drivers/input/touchscreen/sunxi-ts.ko
+kernel/drivers/input/touchscreen/gt9xx_ts.ko
+kernel/drivers/input/touchscreen/gt811.ko

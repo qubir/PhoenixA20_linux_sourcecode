@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/gt9xx_ts.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/touchscreen/gt9xx_ts.ko drivers/input/touchscreen/gt9xx_ts.o drivers/input/touchscreen/gt9xx_ts.mod.o

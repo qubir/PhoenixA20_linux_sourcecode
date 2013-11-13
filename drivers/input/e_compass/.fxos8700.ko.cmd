@@ -1,0 +1,1 @@
+cmd_drivers/input/e_compass/fxos8700.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/e_compass/fxos8700.ko drivers/input/e_compass/fxos8700.o drivers/input/e_compass/fxos8700.mod.o

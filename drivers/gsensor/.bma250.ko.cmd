@@ -1,0 +1,1 @@
+cmd_drivers/gsensor/bma250.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/gsensor/bma250.ko drivers/gsensor/bma250.o drivers/gsensor/bma250.mod.o

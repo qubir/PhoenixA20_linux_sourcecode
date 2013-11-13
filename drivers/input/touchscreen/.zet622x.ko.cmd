@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/zet622x.ko := arm-linux-gnueabi-ld -EL -r  -T /home/jixinhui/Projects/phoenix/lichee/linux-3.3/scripts/module-common.lds --build-id  -o drivers/input/touchscreen/zet622x.ko drivers/input/touchscreen/zet622x.o drivers/input/touchscreen/zet622x.mod.o

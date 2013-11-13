@@ -1,0 +1,2 @@
+kernel/drivers/input/e_compass/lsm303d.ko
+kernel/drivers/input/e_compass/fxos8700.ko
