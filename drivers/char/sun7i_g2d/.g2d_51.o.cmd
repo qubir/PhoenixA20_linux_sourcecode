@@ -1,0 +1,1 @@
+cmd_drivers/char/sun7i_g2d/g2d_51.o := arm-linux-gnueabi-ld -EL    -r -o drivers/char/sun7i_g2d/g2d_51.o drivers/char/sun7i_g2d/g2d_driver.o drivers/char/sun7i_g2d/g2d.o drivers/char/sun7i_g2d/g2d_bsp.o 

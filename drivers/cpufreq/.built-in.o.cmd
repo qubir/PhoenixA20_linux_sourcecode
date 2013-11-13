@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/built-in.o :=  arm-linux-gnueabi-ld -EL    -r -o drivers/cpufreq/built-in.o drivers/cpufreq/cpufreq.o drivers/cpufreq/cpufreq_stats.o drivers/cpufreq/cpufreq_performance.o drivers/cpufreq/cpufreq_userspace.o drivers/cpufreq/cpufreq_fantasys.o drivers/cpufreq/cpufreq_earlysuspend.o drivers/cpufreq/freq_table.o 

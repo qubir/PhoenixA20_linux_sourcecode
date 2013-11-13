@@ -1,0 +1,1 @@
+cmd_drivers/char/built-in.o :=  arm-linux-gnueabi-ld -EL    -r -o drivers/char/built-in.o drivers/char/mem.o drivers/char/random.o drivers/char/misc.o drivers/char/gpio_test/built-in.o drivers/char/sun7i_g2d/built-in.o drivers/char/sunxi_mem/built-in.o 

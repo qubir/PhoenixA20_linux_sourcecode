@@ -1,0 +1,1 @@
+cmd_drivers/char/sunxi_mem/built-in.o :=  arm-linux-gnueabi-ld -EL    -r -o drivers/char/sunxi_mem/built-in.o drivers/char/sunxi_mem/sunxi_physmem.o drivers/char/sunxi_mem/drv.o drivers/char/sunxi_mem/cache-v7.o 
