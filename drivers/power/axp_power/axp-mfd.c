@@ -268,13 +268,13 @@ static void axp_power_off(void)
 		}
 	}
     axp_write(&axp->dev, POWER20_DATA_BUFFERC, 0x00);
-    axp_write(&axp->dev, 0xf4, 0x06);
-    axp_write(&axp->dev, 0xf2, 0x04);
-    axp_write(&axp->dev, 0xff, 0x01);
-    axp_write(&axp->dev, 0x04, 0x01);
-    axp_clr_bits(&axp->dev, 0x03, 0xc0);
-    axp_write(&axp->dev, 0xff, 0x00);
-    mdelay(20);
+    //axp_write(&axp->dev, 0xf4, 0x06);
+    //axp_write(&axp->dev, 0xf2, 0x04);
+    //axp_write(&axp->dev, 0xff, 0x01);
+    //axp_write(&axp->dev, 0x04, 0x01);
+    //axp_clr_bits(&axp->dev, 0x03, 0xc0);
+    //axp_write(&axp->dev, 0xff, 0x00);
+    //mdelay(20);
 	axp_set_bits(&axp->dev, POWER20_OFF_CTL, 0x80);
     mdelay(20);
     printk("[axp] warning!!! axp can't power-off, maybe some error happend!\n");
