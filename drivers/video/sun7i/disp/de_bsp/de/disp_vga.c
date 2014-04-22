@@ -1,3 +1,26 @@
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <linux/init.h>
+#include <linux/io.h>
+#include <linux/device.h>
+#include <linux/interrupt.h>
+#include <linux/delay.h>
+#include <linux/err.h>
+#include <linux/clk.h>
+#include <linux/gpio.h>
+#include <linux/platform_device.h>
+#include <linux/spinlock.h>
+#include <linux/scatterlist.h>
+#include <linux/dma-mapping.h>
+#include <linux/slab.h>
+#include <linux/regulator/consumer.h>
+#include <asm/cacheflush.h>
+#include <asm/uaccess.h>
+#include <mach/hardware.h>
+#include <mach/platform.h>
+#include <mach/sys_config.h>
+#include <mach/gpio.h>
+#include <mach/clock.h> 
 #include "disp_vga.h"
 #include "disp_de.h"
 #include "disp_display.h"
@@ -6,6 +29,37 @@
 #include "disp_lcd.h"
 #include "disp_clk.h"
 
+static __s32 set_vga_buffer(__u32 on)
+{	
+	script_item_u  gpio_info;
+	int  ret;
+
+	ret = script_get_item("tv_out_dac_para","dac_buffer_enable",&gpio_info);
+	if(ret < 0)
+	{
+		DE_WRN("fetch script gpio infomation fail\n");
+	}
+	else
+	{
+		DE_WRN("fetch script gpio infomation ok \n");
+	}
+	u32 pio_hdle = gpio_info.gpio.gpio;		
+	ret = gpio_request(pio_hdle,"dac_buffer_enable");
+	if(ret < 0)
+	{
+		DE_WRN("get gpio fail\n");
+	}
+	gpio_direction_output(pio_hdle, gpio_info.gpio.data);
+        sw_gpio_setpull(pio_hdle, gpio_info.gpio.pull);
+        sw_gpio_setdrvlevel(pio_hdle, gpio_info.gpio.drv_level);
+	sw_gpio_setcfg(pio_hdle, gpio_info.gpio.mul_sel);
+	
+		
+	 __gpio_set_value(pio_hdle, on);
+     
+    	 gpio_free(pio_hdle);
+	return ret;
+}
 
 __s32 VGA_Init(void)
 {		
@@ -65,7 +119,9 @@ __s32 BSP_disp_vga_open(__u32 sel)
                 gdisp.screen[sel].b_out_interlace = 0;
         	gdisp.screen[sel].status |= VGA_ON;
         	gdisp.screen[sel].lcdc_status |= LCDC_TCON1_USED;
-        	gdisp.screen[sel].output_type = DISP_OUTPUT_TYPE_VGA;
+        	gdisp.screen[sel].output_type = DISP_OUTPUT_TYPE_VGA;		
+                set_vga_buffer(1);
+
 #ifdef __LINUX_OSAL__
                 Display_set_fb_timming(sel);
 #endif
@@ -90,6 +146,7 @@ __s32 BSP_disp_vga_close(__u32 sel)
             	gdisp.screen[sel].output_type = DISP_OUTPUT_TYPE_NONE;
         	gdisp.screen[sel].pll_use_status &= ((gdisp.screen[sel].pll_use_status == VIDEO_PLL0_USED)? VIDEO_PLL0_USED_MASK : VIDEO_PLL1_USED_MASK);
         }
+        set_vga_buffer(0);
 	return DIS_SUCCESS;
 }
 
